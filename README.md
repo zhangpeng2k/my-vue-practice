@@ -1,4 +1,4 @@
-# defaultdemo
+# my-vue-practice
 
 ## Project setup
 ```
