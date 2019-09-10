@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
+import Vuex from './my-vuex'
 
 Vue.use(Vuex)
 
@@ -28,14 +28,14 @@ export default new Vuex.Store({
       }
       return false;
     },
-    asyncIncrement({ dispatch }) {
+    // asyncIncrement({ dispatch }) {
       
-      console.warn(dispatch)
-      return new Promise(resolve => {
-        setTimeout(() => {
-          resolve(dispatch("increment"));
-        }, 1000);
-      });
-    },
+    //   console.warn(dispatch)
+    //   return new Promise(resolve => {
+    //     setTimeout(() => {
+    //       resolve(dispatch("increment"));
+    //     }, 1000);
+    //   });
+    // },
   },
 });
