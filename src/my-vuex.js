@@ -22,8 +22,6 @@ class Store {
   }
 
   dispatch = (type, arg) => {
-    console.warn(type,arg)
-    
     this.actions[type]({
       commit: this.commit,
       state: this.state,
